@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01000AEF9BF363734BB0A3E93CBA1A1941BD" Name="TrackedTimeContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{539F73B9-43C8-4D0A-B8AA-B85BEFC6D91C}" DisplayName="Employee" Required="TRUE" Name="TimeTrackingEmployee" />
+      <FieldRef ID="{c5d097b7-d02f-4702-a163-bd2f649970a5}" DisplayName="Project/task" Required="TRUE" Name="TimeTrackingProjectName" />
+      <FieldRef ID="{695B8CAE-09DC-4DA3-B1A8-5D8B72229EFB}" DisplayName="Duration (hours)" Required="TRUE" Name="TimeTrackingDuration" />
+      <FieldRef ID="{C3EDF51A-4F0D-4D16-A0BF-7ADA064C9346}" DisplayName="Date" Required="TRUE" Name="TimeTrackingDate" Format="DateOnly" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

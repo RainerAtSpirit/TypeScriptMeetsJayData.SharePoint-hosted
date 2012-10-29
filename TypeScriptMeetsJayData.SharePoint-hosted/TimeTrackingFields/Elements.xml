@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+    ID="{539F73B9-43C8-4D0A-B8AA-B85BEFC6D91C}"
+    Name="TimeTrackingEmployee"
+    DisplayName="Employee"
+    Type="User"
+    List="UserInfo"
+    Required="TRUE"
+    ShowField="ImnName"
+    UserSelectionMode="PeopleOnly"
+    UserSelectionScope="0"
+    Group="MyGroup time-tracking-site columns">
+  </Field>
+
+  <Field
+      ID="{C3EDF51A-4F0D-4D16-A0BF-7ADA064C9346}"
+      Name="TimeTrackingDate"
+      DisplayName="Date"
+      Type="DateTime"
+      Format="DateOnly"
+      Required="TRUE"
+      Group="MyGroup time-tracking-site columns">
+  </Field>
+
+  <Field
+    ID="{c5d097b7-d02f-4702-a163-bd2f649970a5}"
+    Name="TimeTrackingProjectName"
+    DisplayName="Project/task"
+    Type="Lookup"
+    List="Lists/Projects"
+    ShowField="Title"
+    Required="TRUE"
+    Group="MyGroup time-tracking-site columns">
+  </Field>
+
+  <Field
+    ID="{695B8CAE-09DC-4DA3-B1A8-5D8B72229EFB}"
+    Name="TimeTrackingDuration"
+    DisplayName="Duration (hours)"
+    Type="Number"
+    Decimals="1"
+    Required="TRUE"
+    Group="MyGroup time-tracking-site columns">
+  </Field>
+
+
+</Elements>
