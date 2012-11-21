@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91B6277D-5AAB-4CA3-9D70-CEFCBDE79EC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JSLQ.App.SharePointHosted</RootNamespace>
+    <AssemblyName>JSLQ.App.SharePointHosted</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{d7ad4592-5b13-4d7c-a8f7-a064fb68e7ab}</AppFeaturePartId>
+    <WspPartId>{24c19182-8036-462a-b3ca-93c32b0345f6}</WspPartId>
+    <CspkgPartId>{99a2d9e9-34aa-481b-aec0-0ef2b89b56fe}</CspkgPartId>
+    <SqlPackagePartId>{fa0078ca-65e6-4589-b7dc-d19f6c34db3b}</SqlPackagePartId>
+    <ActiveDeploymentConfiguration>Deploy App for SharePoint</ActiveDeploymentConfiguration>
+    <ActivePublishProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App\App.min.js">
+      <DependentUpon>App.ts</DependentUpon>
+    </Content>
+    <Content Include="App\Elements.xml" />
+    <Content Include="App\sandbox.js" />
+    <Content Include="App\temp.min.js">
+      <DependentUpon>temp.ts</DependentUpon>
+    </Content>
+    <Content Include="CommandLine.dll" />
+    <Content Include="Images\ExploreTheResults.jpg" />
+    <Content Include="Images\foundation\orbit\bullets.jpg" />
+    <Content Include="Images\foundation\orbit\left-arrow-small.png" />
+    <Content Include="Images\foundation\orbit\left-arrow.png" />
+    <Content Include="Images\foundation\orbit\loading.gif" />
+    <Content Include="Images\foundation\orbit\mask-black.png" />
+    <Content Include="Images\foundation\orbit\pause-black.png" />
+    <Content Include="Images\foundation\orbit\right-arrow-small.png" />
+    <Content Include="Images\foundation\orbit\right-arrow.png" />
+    <Content Include="Images\foundation\orbit\rotator-black.png" />
+    <Content Include="Images\foundation\orbit\timer-black.png" />
+    <Content Include="Images\GetReady.jpg" />
+    <Content Include="Images\LearnOData.jpg" />
+    <Content Include="Images\ModifyAndRun.jpg" />
+    <Content Include="Images\Spirit_Orange_96x96.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="JayData_readme.txt" />
+    <Content Include="JaySvcUtil.exe" />
+    <Content Include="Pages\Default.aspx" />
+    <TypeScriptCompile Include="App\App.ts" />
+    <Content Include="App\App.js">
+      <DependentUpon>App.ts</DependentUpon>
+    </Content>
+    <Content Include="Projects\Elements.xml" />
+    <Content Include="Projects\ProjectsInstance\Elements.xml" />
+    <Content Include="Projects\Schema.xml" />
+    <Content Include="App\DataService\ListDataSvcMetadata.d.ts" />
+    <Content Include="App\DataService\ListDataSvcMetadata.js" />
+    <Content Include="Scripts\CREDITS.txt" />
+    <Content Include="Scripts\datajs-1.0.3.js" />
+    <Content Include="Scripts\datajs-1.0.3.min.js" />
+    <Content Include="Scripts\foundation\app.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.accordion.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.alerts.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.buttons.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.forms.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.mediaQueryToggle.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.navigation.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.orbit.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.reveal.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.tabs.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.tooltips.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.topbar.js" />
+    <Content Include="Scripts\foundation\jquery.js" />
+    <Content Include="Scripts\foundation\jquery.offcanvas.js" />
+    <Content Include="Scripts\foundation\jquery.placeholder.js" />
+    <Content Include="Scripts\foundation\modernizr.foundation.js" />
+    <Content Include="Scripts\GPL-LICENSE.txt" />
+    <Content Include="Scripts\jaydata-vsdoc.js" />
+    <Content Include="Scripts\jaydata.d.ts" />
+    <Content Include="Scripts\jaydata.js" />
+    <Content Include="Scripts\jaydata.min.js" />
+    <Content Include="Scripts\jaydatamodules\deferred.js" />
+    <Content Include="Scripts\jaydatamodules\errorhandler.js" />
+    <Content Include="Scripts\jaydatamodules\formBinder.js" />
+    <Content Include="Scripts\jaydatamodules\inMemory.js" />
+    <Content Include="Scripts\jaydatamodules\knockout.js" />
+    <Content Include="Scripts\jaydatamodules\qDeferred.js" />
+    <Content Include="Scripts\jaydatamodules\sencha.js" />
+    <Content Include="Scripts\jaydatamodules\template.js" />
+    <Content Include="Scripts\jaydatamodules\validate.js" />
+    <Content Include="Scripts\jaydataproviders\FacebookProvider.js" />
+    <Content Include="Scripts\jaydataproviders\FacebookProvider.min.js" />
+    <Content Include="Scripts\jaydataproviders\IndexedDbProvider.js" />
+    <Content Include="Scripts\jaydataproviders\IndexedDbProvider.min.js" />
+    <Content Include="Scripts\jaydataproviders\InMemoryProvider.js" />
+    <Content Include="Scripts\jaydataproviders\InMemoryProvider.min.js" />
+    <Content Include="Scripts\jaydataproviders\MongoDbProvider.js" />
+    <Content Include="Scripts\jaydataproviders\MongoDbProvider.min.js" />
+    <Content Include="Scripts\jaydataproviders\oDataProvider.js" />
+    <Content Include="Scripts\jaydataproviders\oDataProvider.min.js" />
+    <Content Include="Scripts\jaydataproviders\SqLiteProvider.js" />
+    <Content Include="Scripts\jaydataproviders\SqLiteProvider.min.js" />
+    <Content Include="Scripts\jaydataproviders\StormProvider.js" />
+    <Content Include="Scripts\jaydataproviders\StormProvider.min.js" />
+    <Content Include="Scripts\jaydataproviders\YQLProvider.js" />
+    <Content Include="Scripts\jaydataproviders\YQLProvider.min.js" />
+    <Content Include="Scripts\jquery-1.7.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.2.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery.d.ts" />
+    <Content Include="Scripts\MIT-LICENSE.txt" />
+    <Content Include="Scripts\rainbow\language\csharp.js" />
+    <Content Include="Scripts\rainbow\language\css.js" />
+    <Content Include="Scripts\rainbow\language\generic.js" />
+    <Content Include="Scripts\rainbow\language\html.js" />
+    <Content Include="Scripts\rainbow\language\javascript.js" />
+    <Content Include="Scripts\rainbow\rainbow.js" />
+    <Content Include="Scripts\rainbow\rainbow.min.js" />
+    <Content Include="Scripts\rainbow\themes\all-hallows-eve.css" />
+    <Content Include="Scripts\rainbow\themes\blackboard.css" />
+    <Content Include="Scripts\rainbow\themes\espresso-libre.css" />
+    <Content Include="Scripts\rainbow\themes\github.css" />
+    <Content Include="Scripts\rainbow\themes\obsidian.css" />
+    <Content Include="Scripts\rainbow\themes\pastie.css" />
+    <Content Include="Scripts\rainbow\themes\solarized-dark.css" />
+    <Content Include="Scripts\rainbow\themes\solarized-light.css" />
+    <Content Include="Scripts\rainbow\themes\sunburst.css" />
+    <Content Include="Scripts\rainbow\themes\tomorrow-night.css" />
+    <Content Include="Scripts\rainbow\themes\tricolore.css" />
+    <Content Include="Scripts\rainbow\themes\twilight.css" />
+    <Content Include="Scripts\rainbow\themes\zenburnesque.css" />
+    <TypeScriptCompile Include="App\temp.ts" />
+    <Content Include="App\temp.js">
+      <DependentUpon>temp.ts</DependentUpon>
+    </Content>
+    <Content Include="Time Tracking List\Elements.xml" />
+    <Content Include="Time Tracking List\Schema.xml" />
+    <Content Include="Time Tracking List\Time Tracking List Instance\Elements.xml" />
+    <Content Include="TimeTrackingFields\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TrackedTimeContentType\Elements.xml" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="App\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77723c55-f6a4-4cb5-9de8-093d40d62420}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c6b0762-879a-48c4-a0b2-e77624c37de1}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <None Include="Projects\ProjectsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{46fc2c13-33eb-4f6b-8aba-cca76db6f6e8}</SharePointProjectItemId>
+    </None>
+    <None Include="Projects\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{68134440-0c76-4903-9e78-ecf4bb88044b}</SharePointProjectItemId>
+    </None>
+    <None Include="Time Tracking List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2f798885-d1fb-4990-b9f0-7e6725c87545}</SharePointProjectItemId>
+    </None>
+    <None Include="Time Tracking List\Time Tracking List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5bae9df1-d7af-4fcc-bf82-d19ccb6abae2}</SharePointProjectItemId>
+    </None>
+    <None Include="TimeTrackingFields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4945227e-edfd-44ef-9a43-9665cc9d6216}</SharePointProjectItemId>
+    </None>
+    <None Include="TrackedTimeContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea203fca-d0b7-47fd-af16-a9bb3acf7dc3}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa0078ca-65e6-4589-b7dc-d19f6c34db3b}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b8b0d015-9f96-480f-804a-8248da9ccf85}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png" />
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{526f9740-a09f-4159-94e1-2f42f190f97d}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{fe6bd933-ec63-43a1-8c5c-9122764c696b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{5f7c9888-1f7d-4172-9309-5d0db0ef332b}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -6,7 +6,7 @@
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>TypeScriptMeetsJayData.SharePoint-hosted</Title>
+    <Title>JSLQ.App.SharePointHosted</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 

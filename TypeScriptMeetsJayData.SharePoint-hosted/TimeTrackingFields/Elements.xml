@@ -43,6 +43,5 @@
     Required="TRUE"
     Group="MyGroup time-tracking-site columns">
   </Field>
-
-
+  
 </Elements>

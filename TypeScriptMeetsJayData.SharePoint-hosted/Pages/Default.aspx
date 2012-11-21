@@ -6,31 +6,138 @@
 
 <%-- The markup and script in the following Content element will be placed in the <head> of the page --%>
 <asp:Content ContentPlaceHolderId="PlaceHolderAdditionalPageHead" runat="server">
-    <script type="text/javascript" src="../Scripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-1.7.2.min.js"></script>
 
     <!-- Add your CSS styles to the following file -->
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
-
-    <!-- Add your JavaScript to the following file -->
-    <script type="text/javascript" src="../Scripts/App.js"></script>
-
-    <!-- The following script runs when the DOM is ready. The inline code uses a SharePoint feature to ensure -->
-    <!-- The SharePoint script file sp.js is loaded and will then execute the sharePointReady() function in App.js -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            SP.SOD.executeFunc('sp.js', 'SP.ClientContext', function () { sharePointReady(); });
-        });
-    </script>
+    <link rel="stylesheet" href="../Scripts/rainbow/themes/blackboard.css"/>
+  
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
 
-    <div>
-        <p id="message">
-            <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-            initializing...
-        </p>
+  
+<div class="row">
+    <div class="twelve columns">
+        <h3 class="subheader">Welcome to the <strong>J</strong>ava<strong>S</strong>cript <strong>L</strong>anguage
+            <strong>Q</strong>uery (JSLQ) SharePoint App.</h3>
     </div>
+</div>
+
+<div class="row">
+    <div class="twelve columns">
+        <div class="row">
+            <div class="twelve columns">
+                <div id="featuredContent">
+                    <div>
+                        <h4>You already convinced that REST is the way to go</h4>
+                      <p>Good, but let's face it. <a href="http://www.odata.org/documentation/uri-conventions">URI conventions</a> via 
+                        string concatenation is not the ideal method to deal with OData.
+                      </p>
+                        <p><pre><code data-language="javascript">
+var serverurl = '../_vti_bin/listdata.svc/',
+  odata_endpoint = 'projects',
+  query = '?$filter=(Title%20eq%20%27Project%2010%27)' +
+          '&$callback=parent.handleJSONP_1' +
+          '&$format=json'
+
+$.ajax({
+  url: serverUrl + odata_endpoint + "/" + query,
+  ...
+});
+</code></pre></p>
+                <p>This app uses <a href="http://jaydata.org">JayData</a> to make real-time queries
+                            against the local OData V2 <a href="../_vti_bin/listdata.svc">../_vti_bin/listdata.svc</a> data end point. 
+                        <br />Figure out on your own if that makes your life easier.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Before you start</h4>
+
+                        <p>You will use REST to work with two local lists. While Microsoft provides a new OData endpoint in SharePoint 2013
+                          <code>sitename/_api</code> this app still uses the samewhat older endpoint <code>sitename/_vti_bin/listdata.svc</code>.
+                          There are two reasons to it:</p>
+                          <ol>
+                            <li>Whatever you see here, can be done in SharePoint 2010 as well.</li>
+                            <li>OData V3 support in JayData is coming, but it's not fully there yet. But things are evolving fast, 
+                              so make sure to check <a href="http://jaydata.org">http://jaydata.org</a> for the latest information.</li>
+                          </ol>
+                        <p>
+                          Back to the lists layout: The first one is a simple project list and the second a time tracking list with a lookup to the project list. 
+                          The setup is derived from Chris O'Brien's work. You should make yourself familiar with the setup at 
+                          <a href="http://www.sharepointnutsandbolts.com/2012/08/create-lists-content-types-files-etc.html">Chris O'Brien's blog</a>.  
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Run the examples</h4>
+                        <p><span class="alert label">Important:</span> Make sure to open you favorite console to see what's going over the wire.
+                               For your convinience you find links to both the project and the Time tracking SharePoint lists under each example.</p>
+                        <p><img src="../images/ExploreTheResults.jpg"/></p>
+                    </div>
+                    <div>
+                        <h4>Experiment around</h4>
+
+                        <p>Copy/paste the code into the console and bend it to your will.</p>
+
+                        <p><img src="../images/ModifyAndRun.jpg"/></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div id="dynExamples" class="twelve columns"></div>
+</div>
+
+
+<hr/>
+<div class="row">
+    <div class="four columns">
+        <p>Copyright &copy; 2012 <a href="http://rainerat.spirit.de">RainerAtSpirit</a></p>
+    </div>
+    <div class="eight columns">
+        <ul class="link-list right">
+            <li><a href="http://jaydata.org">JayData</a></li>
+            <li><a href="http://jaydata.org/blog/javascript-language-query-jslq-101">JSLQ 101</a></li>
+            <li><a href="http://jslq.spirit.de">JSLQ playground</a></li>
+            <li><a href=".">Home</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Included JS Files (Uncompressed) -->
+
+<script src="../Scripts/jquery-1.7.2.min.js"></script>
+<script src="../Scripts/foundation/jquery.foundation.orbit.js"></script>
+
+
+<!-- Application Javascript, safe to override -->
+<script src="../Scripts/foundation/app.js"></script>
+
+
+<!-- Code highlighting -->
+<script src="../Scripts/rainbow/rainbow.min.js"></script>
+<script src="../Scripts/rainbow/language/generic.js"></script>
+<script src="../Scripts/rainbow/language/javascript.js"></script>
+<script src="../Scripts/rainbow/language/html.js"></script>
+
+<!-- JayData -->
+<script src="../Scripts/datajs-1.0.3.js"></script>
+<script src="../Scripts/jaydata.js"></script>
+<script src="../Scripts/jaydatamodules/deferred.js"></script>
+<script src="../Scripts/jaydataproviders/oDataProvider.js"></script>
+<script src="../App/DataService/ListDataSvcMetadata.js"></script>
+
+
+<script src="../App/app.js"></script>
+
+
 
 </asp:Content>

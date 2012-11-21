@@ -2,5 +2,20 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Images">
     <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" />
+  <File Path="Images\foundation\orbit\bullets.jpg" Url="Images/foundation/orbit/bullets.jpg" />
+<File Path="Images\foundation\orbit\left-arrow-small.png" Url="Images/foundation/orbit/left-arrow-small.png" />
+<File Path="Images\foundation\orbit\left-arrow.png" Url="Images/foundation/orbit/left-arrow.png" />
+<File Path="Images\foundation\orbit\loading.gif" Url="Images/foundation/orbit/loading.gif" />
+<File Path="Images\foundation\orbit\mask-black.png" Url="Images/foundation/orbit/mask-black.png" />
+<File Path="Images\foundation\orbit\pause-black.png" Url="Images/foundation/orbit/pause-black.png" />
+<File Path="Images\foundation\orbit\right-arrow-small.png" Url="Images/foundation/orbit/right-arrow-small.png" />
+<File Path="Images\foundation\orbit\right-arrow.png" Url="Images/foundation/orbit/right-arrow.png" />
+<File Path="Images\foundation\orbit\rotator-black.png" Url="Images/foundation/orbit/rotator-black.png" />
+<File Path="Images\foundation\orbit\timer-black.png" Url="Images/foundation/orbit/timer-black.png" />
+<File Path="Images\ExploreTheResults.jpg" Url="Images/ExploreTheResults.jpg" />
+<File Path="Images\GetReady.jpg" Url="Images/GetReady.jpg" />
+<File Path="Images\LearnOData.jpg" Url="Images/LearnOData.jpg" />
+<File Path="Images\ModifyAndRun.jpg" Url="Images/ModifyAndRun.jpg" />
+    <File Path="Images\Spirit_Orange_96x96.png" Url="Images/Spirit_Orange_96x96.png" />
   </Module>
 </Elements>

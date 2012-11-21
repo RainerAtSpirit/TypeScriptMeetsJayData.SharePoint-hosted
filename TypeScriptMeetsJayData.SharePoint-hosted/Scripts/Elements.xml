@@ -1,9 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Scripts">
-    <File Path="Scripts\App.js" Url="Scripts/App.js" />
-  <File Path="Scripts\jquery-1.6.2-vsdoc.js" Url="Scripts/jquery-1.6.2-vsdoc.js" />
-<File Path="Scripts\jquery-1.6.2.min.js" Url="Scripts/jquery-1.6.2.min.js" />
-<File Path="Scripts\jquery-1.6.2.js" Url="Scripts/jquery-1.6.2.js" />
-</Module>
+<File Path="Scripts\jquery-1.7.2.min.js" Url="Scripts/jquery-1.7.2.min.js" />
+<File Path="Scripts\jquery-1.7.2.js" Url="Scripts/jquery-1.7.2.js" />
+<File Path="Scripts\jquery-1.7.2.intellisense.js" Url="Scripts/jquery-1.7.2.intellisense.js" />
+<File Path="Scripts\rainbow\rainbow.js" Url="Scripts/rainbow/rainbow.js" />
+<File Path="Scripts\rainbow\rainbow.min.js" Url="Scripts/rainbow/rainbow.min.js" />
+<File Path="Scripts\rainbow\language\csharp.js" Url="Scripts/rainbow/language/csharp.js" />
+<File Path="Scripts\rainbow\language\css.js" Url="Scripts/rainbow/language/css.js" />
+<File Path="Scripts\rainbow\language\generic.js" Url="Scripts/rainbow/language/generic.js" />
+<File Path="Scripts\rainbow\language\html.js" Url="Scripts/rainbow/language/html.js" />
+<File Path="Scripts\rainbow\language\javascript.js" Url="Scripts/rainbow/language/javascript.js" />
+<File Path="Scripts\rainbow\themes\all-hallows-eve.css" Url="Scripts/rainbow/themes/all-hallows-eve.css" />
+<File Path="Scripts\rainbow\themes\blackboard.css" Url="Scripts/rainbow/themes/blackboard.css" />
+<File Path="Scripts\rainbow\themes\espresso-libre.css" Url="Scripts/rainbow/themes/espresso-libre.css" />
+<File Path="Scripts\rainbow\themes\github.css" Url="Scripts/rainbow/themes/github.css" />
+<File Path="Scripts\rainbow\themes\obsidian.css" Url="Scripts/rainbow/themes/obsidian.css" />
+<File Path="Scripts\rainbow\themes\pastie.css" Url="Scripts/rainbow/themes/pastie.css" />
+<File Path="Scripts\rainbow\themes\solarized-dark.css" Url="Scripts/rainbow/themes/solarized-dark.css" />
+<File Path="Scripts\rainbow\themes\solarized-light.css" Url="Scripts/rainbow/themes/solarized-light.css" />
+<File Path="Scripts\rainbow\themes\sunburst.css" Url="Scripts/rainbow/themes/sunburst.css" />
+<File Path="Scripts\rainbow\themes\tomorrow-night.css" Url="Scripts/rainbow/themes/tomorrow-night.css" />
+<File Path="Scripts\rainbow\themes\tricolore.css" Url="Scripts/rainbow/themes/tricolore.css" />
+<File Path="Scripts\rainbow\themes\twilight.css" Url="Scripts/rainbow/themes/twilight.css" />
+<File Path="Scripts\rainbow\themes\zenburnesque.css" Url="Scripts/rainbow/themes/zenburnesque.css" />
+<File Path="Scripts\foundation\app.js" Url="Scripts/foundation/app.js" />
+<File Path="Scripts\foundation\jquery.foundation.accordion.js" Url="Scripts/foundation/jquery.foundation.accordion.js" />
+<File Path="Scripts\foundation\jquery.foundation.alerts.js" Url="Scripts/foundation/jquery.foundation.alerts.js" />
+<File Path="Scripts\foundation\jquery.foundation.buttons.js" Url="Scripts/foundation/jquery.foundation.buttons.js" />
+<File Path="Scripts\foundation\jquery.foundation.forms.js" Url="Scripts/foundation/jquery.foundation.forms.js" />
+<File Path="Scripts\foundation\jquery.foundation.mediaQueryToggle.js" Url="Scripts/foundation/jquery.foundation.mediaQueryToggle.js" />
+<File Path="Scripts\foundation\jquery.foundation.navigation.js" Url="Scripts/foundation/jquery.foundation.navigation.js" />
+<File Path="Scripts\foundation\jquery.foundation.orbit.js" Url="Scripts/foundation/jquery.foundation.orbit.js" />
+<File Path="Scripts\foundation\jquery.foundation.reveal.js" Url="Scripts/foundation/jquery.foundation.reveal.js" />
+<File Path="Scripts\foundation\jquery.foundation.tabs.js" Url="Scripts/foundation/jquery.foundation.tabs.js" />
+<File Path="Scripts\foundation\jquery.foundation.tooltips.js" Url="Scripts/foundation/jquery.foundation.tooltips.js" />
+<File Path="Scripts\foundation\jquery.foundation.topbar.js" Url="Scripts/foundation/jquery.foundation.topbar.js" />
+<File Path="Scripts\foundation\jquery.js" Url="Scripts/foundation/jquery.js" />
+<File Path="Scripts\foundation\jquery.offcanvas.js" Url="Scripts/foundation/jquery.offcanvas.js" />
+<File Path="Scripts\foundation\jquery.placeholder.js" Url="Scripts/foundation/jquery.placeholder.js" />
+<File Path="Scripts\foundation\modernizr.foundation.js" Url="Scripts/foundation/modernizr.foundation.js" />
+<File Path="Scripts\datajs-1.0.3.min.js" Url="Scripts/datajs-1.0.3.min.js" />
+<File Path="Scripts\datajs-1.0.3.js" Url="Scripts/datajs-1.0.3.js" />
+<File Path="Scripts\jaydata-vsdoc.js" Url="Scripts/jaydata-vsdoc.js" />
+<File Path="Scripts\jaydataproviders\YQLProvider.min.js" Url="Scripts/jaydataproviders/YQLProvider.min.js" />
+<File Path="Scripts\jaydataproviders\YQLProvider.js" Url="Scripts/jaydataproviders/YQLProvider.js" />
+<File Path="Scripts\jaydataproviders\StormProvider.min.js" Url="Scripts/jaydataproviders/StormProvider.min.js" />
+<File Path="Scripts\jaydataproviders\StormProvider.js" Url="Scripts/jaydataproviders/StormProvider.js" />
+<File Path="Scripts\jaydataproviders\SqLiteProvider.min.js" Url="Scripts/jaydataproviders/SqLiteProvider.min.js" />
+<File Path="Scripts\jaydataproviders\SqLiteProvider.js" Url="Scripts/jaydataproviders/SqLiteProvider.js" />
+<File Path="Scripts\jaydataproviders\oDataProvider.min.js" Url="Scripts/jaydataproviders/oDataProvider.min.js" />
+<File Path="Scripts\jaydataproviders\oDataProvider.js" Url="Scripts/jaydataproviders/oDataProvider.js" />
+<File Path="Scripts\jaydataproviders\MongoDbProvider.min.js" Url="Scripts/jaydataproviders/MongoDbProvider.min.js" />
+<File Path="Scripts\jaydataproviders\MongoDbProvider.js" Url="Scripts/jaydataproviders/MongoDbProvider.js" />
+<File Path="Scripts\jaydataproviders\InMemoryProvider.min.js" Url="Scripts/jaydataproviders/InMemoryProvider.min.js" />
+<File Path="Scripts\jaydataproviders\InMemoryProvider.js" Url="Scripts/jaydataproviders/InMemoryProvider.js" />
+<File Path="Scripts\jaydataproviders\IndexedDbProvider.min.js" Url="Scripts/jaydataproviders/IndexedDbProvider.min.js" />
+<File Path="Scripts\jaydataproviders\IndexedDbProvider.js" Url="Scripts/jaydataproviders/IndexedDbProvider.js" />
+<File Path="Scripts\jaydataproviders\FacebookProvider.min.js" Url="Scripts/jaydataproviders/FacebookProvider.min.js" />
+<File Path="Scripts\jaydataproviders\FacebookProvider.js" Url="Scripts/jaydataproviders/FacebookProvider.js" />
+<File Path="Scripts\jaydatamodules\validate.js" Url="Scripts/jaydatamodules/validate.js" />
+<File Path="Scripts\jaydatamodules\template.js" Url="Scripts/jaydatamodules/template.js" />
+<File Path="Scripts\jaydatamodules\sencha.js" Url="Scripts/jaydatamodules/sencha.js" />
+<File Path="Scripts\jaydatamodules\qDeferred.js" Url="Scripts/jaydatamodules/qDeferred.js" />
+<File Path="Scripts\jaydatamodules\knockout.js" Url="Scripts/jaydatamodules/knockout.js" />
+<File Path="Scripts\jaydatamodules\inMemory.js" Url="Scripts/jaydatamodules/inMemory.js" />
+<File Path="Scripts\jaydatamodules\formBinder.js" Url="Scripts/jaydatamodules/formBinder.js" />
+<File Path="Scripts\jaydatamodules\errorhandler.js" Url="Scripts/jaydatamodules/errorhandler.js" />
+<File Path="Scripts\jaydatamodules\deferred.js" Url="Scripts/jaydatamodules/deferred.js" />
+<File Path="Scripts\jaydata.min.js" Url="Scripts/jaydata.min.js" />
+<File Path="Scripts\jaydata.js" Url="Scripts/jaydata.js" />
+    <File Path="Scripts\jquery.d.ts" Url="Scripts/jquery.d.ts" />
+    <File Path="Scripts\CREDITS.txt" Url="Scripts/CREDITS.txt" />
+    <File Path="Scripts\GPL-LICENSE.txt" Url="Scripts/GPL-LICENSE.txt" />
+    <File Path="Scripts\jaydata.d.ts" Url="Scripts/jaydata.d.ts" />
+    <File Path="Scripts\MIT-LICENSE.txt" Url="Scripts/MIT-LICENSE.txt" />
+  </Module>
 </Elements>

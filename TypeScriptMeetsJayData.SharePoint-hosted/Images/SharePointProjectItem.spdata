@@ -3,5 +3,20 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Images\" Type="ElementManifest" />
     <ProjectItemFile Source="AppIcon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\bullets.jpg" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\left-arrow-small.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\left-arrow.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\loading.gif" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\mask-black.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\pause-black.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\right-arrow-small.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\right-arrow.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\rotator-black.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="foundation\orbit\timer-black.png" Target="Images\foundation\orbit\" Type="ElementFile" />
+    <ProjectItemFile Source="ExploreTheResults.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="GetReady.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="LearnOData.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="ModifyAndRun.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Spirit_Orange_96x96.png" Target="Images\" Type="ElementFile" />
   </Files>
 </ProjectItem>
