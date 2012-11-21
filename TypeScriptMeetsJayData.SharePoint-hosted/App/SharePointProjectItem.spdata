@@ -6,10 +6,11 @@
     <ProjectItemFile Source="App.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="DataService\ListDataSvcMetadata.d.ts" Target="App\DataService\" Type="ElementFile" />
     <ProjectItemFile Source="DataService\ListDataSvcMetadata.js" Target="App\DataService\" Type="ElementFile" />
-    <ProjectItemFile Source="sandbox.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="App.min.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="temp.ts" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="temp.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="temp.min.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="DataService\ListDataSvcMetadata.d.js" Target="App\DataService\" Type="ElementFile" />
+    <ProjectItemFile Source="DataService\ListDataSvcMetadata.d.min.js" Target="App\DataService\" Type="ElementFile" />
   </Files>
 </ProjectItem>

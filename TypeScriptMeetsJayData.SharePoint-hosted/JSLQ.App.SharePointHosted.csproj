@@ -45,8 +45,13 @@
     <Content Include="App\App.min.js">
       <DependentUpon>App.ts</DependentUpon>
     </Content>
+    <Content Include="App\DataService\ListDataSvcMetadata.d.js">
+      <DependentUpon>ListDataSvcMetadata.d.ts</DependentUpon>
+    </Content>
+    <Content Include="App\DataService\ListDataSvcMetadata.d.min.js">
+      <DependentUpon>ListDataSvcMetadata.d.ts</DependentUpon>
+    </Content>
     <Content Include="App\Elements.xml" />
-    <Content Include="App\sandbox.js" />
     <Content Include="App\temp.min.js">
       <DependentUpon>temp.ts</DependentUpon>
     </Content>
@@ -101,6 +106,12 @@
     <Content Include="Scripts\foundation\modernizr.foundation.js" />
     <Content Include="Scripts\GPL-LICENSE.txt" />
     <Content Include="Scripts\jaydata-vsdoc.js" />
+    <Content Include="Scripts\jaydata.d.js">
+      <DependentUpon>jaydata.d.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jaydata.d.min.js">
+      <DependentUpon>jaydata.d.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\jaydata.d.ts" />
     <Content Include="Scripts\jaydata.js" />
     <Content Include="Scripts\jaydata.min.js" />
@@ -132,8 +143,15 @@
     <Content Include="Scripts\jquery-1.7.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.2.js" />
     <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery.d.js">
+      <DependentUpon>jquery.d.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.d.min.js">
+      <DependentUpon>jquery.d.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery.d.ts" />
     <Content Include="Scripts\MIT-LICENSE.txt" />
+    <Content Include="Scripts\r.js" />
     <Content Include="Scripts\rainbow\language\csharp.js" />
     <Content Include="Scripts\rainbow\language\css.js" />
     <Content Include="Scripts\rainbow\language\generic.js" />
@@ -158,6 +176,10 @@
     <Content Include="App\temp.js">
       <DependentUpon>temp.ts</DependentUpon>
     </Content>
+    <Content Include="Scripts\require.js" />
+    <Content Include="Scripts\require.min.js">
+      <DependentUpon>require.js</DependentUpon>
+    </Content>
     <Content Include="Time Tracking List\Elements.xml" />
     <Content Include="Time Tracking List\Schema.xml" />
     <Content Include="Time Tracking List\Time Tracking List Instance\Elements.xml" />
@@ -165,8 +187,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="TrackedTimeContentType\Elements.xml" />
-    <None Include=".gitattributes" />
-    <None Include=".gitignore" />
     <None Include="App\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{77723c55-f6a4-4cb5-9de8-093d40d62420}</SharePointProjectItemId>
     </None>
@@ -180,6 +200,9 @@
     </None>
     <None Include="Projects\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{68134440-0c76-4903-9e78-ecf4bb88044b}</SharePointProjectItemId>
+    </None>
+    <None Include="Scripts\require.min.js.map">
+      <DependentUpon>require.js</DependentUpon>
     </None>
     <None Include="Time Tracking List\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2f798885-d1fb-4990-b9f0-7e6725c87545}</SharePointProjectItemId>

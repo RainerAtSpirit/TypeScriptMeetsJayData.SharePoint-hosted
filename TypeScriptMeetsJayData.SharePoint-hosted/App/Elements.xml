@@ -5,10 +5,11 @@
 <File Path="App\App.js" Url="App/App.js" />
 <File Path="App\DataService\ListDataSvcMetadata.d.ts" Url="App/DataService/ListDataSvcMetadata.d.ts" />
 <File Path="App\DataService\ListDataSvcMetadata.js" Url="App/DataService/ListDataSvcMetadata.js" />
-<File Path="App\sandbox.js" Url="App/sandbox.js" />
     <File Path="App\App.min.js" Url="App/App.min.js" />
     <File Path="App\temp.ts" Url="App/temp.ts" />
     <File Path="App\temp.js" Url="App/temp.js" />
     <File Path="App\temp.min.js" Url="App/temp.min.js" />
+    <File Path="App\DataService\ListDataSvcMetadata.d.js" Url="App/DataService/ListDataSvcMetadata.d.js" />
+    <File Path="App\DataService\ListDataSvcMetadata.d.min.js" Url="App/DataService/ListDataSvcMetadata.d.min.js" />
   </Module>
 </Elements>

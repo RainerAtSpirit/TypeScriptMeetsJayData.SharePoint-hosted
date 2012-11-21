@@ -112,13 +112,11 @@ $.ajax({
 </div>
 
 
-<!-- Included JS Files (Uncompressed) -->
-
+<!-- Included JS Files -->
 <script src="../Scripts/jquery-1.7.2.min.js"></script>
+
+<!-- Foundation Javascript, safe to override -->
 <script src="../Scripts/foundation/jquery.foundation.orbit.js"></script>
-
-
-<!-- Application Javascript, safe to override -->
 <script src="../Scripts/foundation/app.js"></script>
 
 
@@ -135,9 +133,6 @@ $.ajax({
 <script src="../Scripts/jaydataproviders/oDataProvider.js"></script>
 <script src="../App/DataService/ListDataSvcMetadata.js"></script>
 
-
 <script src="../App/app.js"></script>
-
-
-
+  
 </asp:Content>

@@ -7,13 +7,17 @@ declare var SP;
 
 module MyApp {
 
-  export var listDataSvc = new MyApp.DataService.Context({
+  export var ctx = new MyApp.DataService.Context({
     name: "oData",
     oDataServiceHost: "../_vti_bin/listdata.svc"
   });
 
-  var project = new listDataSvc.Projects.elementType({
-    Title: "hello world"
-  });
-
+  ctx.TimeTrackingList.add({
+    Title: "Test entry",
+    Date: new Date(),
+    DurationHours: 4,
+    ProjectTask:  new ctx.Projects.elementType({Title: 'Project one'}),
+    // Hardcoding my own Id 
+    EmployeeId: 7
+  })
 }

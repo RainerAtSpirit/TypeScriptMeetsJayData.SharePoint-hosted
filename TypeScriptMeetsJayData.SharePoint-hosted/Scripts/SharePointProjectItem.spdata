@@ -76,5 +76,13 @@
     <ProjectItemFile Source="GPL-LICENSE.txt" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jaydata.d.ts" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="MIT-LICENSE.txt" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="require.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="r.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="require.min.js.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="require.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.d.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jaydata.d.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jaydata.d.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.d.min.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

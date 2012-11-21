@@ -75,5 +75,13 @@
     <File Path="Scripts\GPL-LICENSE.txt" Url="Scripts/GPL-LICENSE.txt" />
     <File Path="Scripts\jaydata.d.ts" Url="Scripts/jaydata.d.ts" />
     <File Path="Scripts\MIT-LICENSE.txt" Url="Scripts/MIT-LICENSE.txt" />
+    <File Path="Scripts\require.js" Url="Scripts/require.js" />
+    <File Path="Scripts\r.js" Url="Scripts/r.js" />
+    <File Path="Scripts\require.min.js.map" Url="Scripts/require.min.js.map" />
+    <File Path="Scripts\require.min.js" Url="Scripts/require.min.js" />
+    <File Path="Scripts\jquery.d.js" Url="Scripts/jquery.d.js" />
+    <File Path="Scripts\jaydata.d.js" Url="Scripts/jaydata.d.js" />
+    <File Path="Scripts\jaydata.d.min.js" Url="Scripts/jaydata.d.min.js" />
+    <File Path="Scripts\jquery.d.min.js" Url="Scripts/jquery.d.min.js" />
   </Module>
 </Elements>

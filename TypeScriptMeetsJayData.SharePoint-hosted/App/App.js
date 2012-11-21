@@ -1,5 +1,6 @@
 var MyApp;
 (function (MyApp) {
+    MyApp.user;
     MyApp.ctx = new MyApp.DataService.Context({
         name: "oData",
         oDataServiceHost: "../_vti_bin/listdata.svc"
@@ -15,6 +16,19 @@ var MyApp;
         };
         options.url = event.currentTarget.href;
         SP.UI.ModalDialog.showModalDialog(options);
+    });
+    $.ajax('../_api/web/CurrentUser', {
+        type: 'GET',
+        headers: {
+            'Accept': 'application/json;odata=verbose'
+        },
+        contentType: 'application/json',
+        success: function (json) {
+            MyApp.user = json.d;
+        },
+        error: function () {
+            console.log('Error' + arguments);
+        }
     });
 })(MyApp || (MyApp = {}));
 
@@ -105,6 +119,26 @@ var MyApp;
                     return MyApp.ctx.saveChanges();
                 }).then(function () {
                     console.log('project life cycle completed');
+                }).fail(function () {
+                    console.log('Error: ', arguments[0]);
+                });
+            }
+        });
+        CRUD.examples.push({
+            Title: "Create a new Time Tracking item",
+            Description: "TimeTracking list has a Lookup field to the project list. " + "Here we a going to create a new TimeTracking item AND a new project in a single call.",
+            Code: function () {
+                MyApp.ctx.TimeTrackingList.add({
+                    Title: "Test entry",
+                    Date: new Date(),
+                    DurationHours: 4,
+                    ProjectTask: new MyApp.ctx.Projects.elementType({
+                        Title: 'Project with related time entry'
+                    }),
+                    EmployeeId: MyApp.user.Id
+                });
+                MyApp.ctx.saveChanges().then(function () {
+                    console.log('Way too easy, isn\'t it?');
                 }).fail(function () {
                     console.log('Error: ', arguments[0]);
                 });

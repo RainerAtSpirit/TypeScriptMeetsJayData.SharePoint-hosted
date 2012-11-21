@@ -1,6 +1,7 @@
 /// <reference path="../Scripts/jquery.d.ts" />
 /// <reference path="DataService/ListDataSvcMetadata.d.ts" />
 
+
 // Declaration for libs without a TypeScript definition (infered any)
 declare var SP;
 declare var Rainbow;
@@ -8,12 +9,14 @@ declare var Rainbow;
 
 module MyApp {
 
+  export var user: any;
+
   export var ctx = new MyApp.DataService.Context({
     name: "oData",
     oDataServiceHost: "../_vti_bin/listdata.svc"
   });
 
- 
+
   // Open modal Dialog
   $(document).on('click', 'a.viewModal', function (event) {
     event.preventDefault();
@@ -30,6 +33,18 @@ module MyApp {
 
     SP.UI.ModalDialog.showModalDialog(options);
   });
+
+  // Getting user information via REST the hard way :)
+  $.ajax('../_api/web/CurrentUser', {
+    type: 'GET',
+    headers: { 'Accept': 'application/json;odata=verbose' },
+    contentType: 'application/json',
+    success: function (json) { MyApp.user = json.d; },
+    error: function(){console.log('Error' + arguments)}
+  });
+  
+
+
 
 }
 
@@ -56,7 +71,7 @@ module MyApp.CRUD {
     Title: " Create a another project item by using an object literal",
     Description: "This time saveChanges() uses explicit success and error callbacks",
     Code: function () {
-      
+
       ctx.Projects.add({
         Title: "Project two"
       });
@@ -75,7 +90,7 @@ module MyApp.CRUD {
   // Create a new project item
   examples.push({
     Title: " Create a another project item",
-    Description: "saveChanges() provides a promise Interface as well, so we can " + 
+    Description: "saveChanges() provides a promise Interface as well, so we can " +
       "use .then() and .fail() instead of success and error callbacks. My personal favorite ;-)",
     Code: function () {
       ctx.Projects.add({
@@ -94,7 +109,7 @@ module MyApp.CRUD {
   // Create multiple items
   examples.push({
     Title: "Ever had the need to create more than one project in a single network operation?",
-    Description: "addMany() and object literals are your friends. Watch how that translates " + 
+    Description: "addMany() and object literals are your friends. Watch how that translates " +
       "into a OData's $batch method that sgoes over the wire.",
     Code: function () {
       var newProjects = [];
@@ -158,6 +173,30 @@ module MyApp.CRUD {
         });
     }
   });
+
+  // Create a new Time Tracking item
+  examples.push({
+    Title: "Create a new Time Tracking item",
+    Description: "TimeTracking list has a Lookup field to the project list. " + 
+      "Here we a going to create a new TimeTracking item AND a new project in a single call.",
+    Code: function () {
+      ctx.TimeTrackingList.add({
+        Title: "Test entry",
+        Date: new Date(),
+        DurationHours: 4,
+        ProjectTask: new ctx.Projects.elementType({ Title: 'Project with related time entry' }),
+        // REST call to /_api/web/CurrentUser
+        EmployeeId: MyApp.user.Id
+      });
+      MyApp.ctx.saveChanges()
+        .then(function () {
+          console.log('Way too easy, isn\'t it?')
+        })
+        .fail(function () {
+          console.log('Error: ', arguments[0]);
+        });
+    }
+  });
 }
 
 module MyApp.view {
@@ -203,7 +242,7 @@ module MyApp.notification {
   // Hooking up EventListener to SP.UI.Notify.addNotification
   // Add minimalistic TypeScript defintion in jaydata.t.ds
   // addEventListener(event: string, any): void;
- 
+
   ctx.addEventListener("added", function () {
     console.log("Event notification: Item added", arguments);
     notifyId = SP.UI.Notify.addNotification('Item added');
