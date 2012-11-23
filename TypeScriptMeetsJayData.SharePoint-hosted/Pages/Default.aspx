@@ -53,18 +53,23 @@ $.ajax({
                         </p>
                     </div>
                     <div>
+                        <h4>TypeScript, RequireJS and JayData</h4>
+                        <p>Your <span class="success label">DREAM TEAM</span> for SharePoint 2013 app development.</p>
+                        <p><img src="../images/TypeScriptExample.jpg"/></p>
+                    </div>
+                    <div>
                         <h4>Before you start</h4>
 
-                        <p>You will use REST to work with two local lists. While Microsoft provides a new OData endpoint in SharePoint 2013
-                          <code>sitename/_api</code> this app still uses the samewhat older endpoint <code>sitename/_vti_bin/listdata.svc</code>.
+                        <p>While Microsoft provides a new OData endpoint in SharePoint 2013
+                          <code>sitename/_api</code> this app uses the samewhat older endpoint <code>sitename/_vti_bin/listdata.svc</code>.
                           There are two reasons to it:</p>
-                          <ol>
-                            <li>Whatever you see here, can be done in SharePoint 2010 as well.</li>
-                            <li>OData V3 support in JayData is coming, but it's not fully there yet. But things are evolving fast, 
-                              so make sure to check <a href="http://jaydata.org">http://jaydata.org</a> for the latest information.</li>
-                          </ol>
+                        <ol>
+                          <li>Whatever you see here, can be done in SharePoint 2010 as well.</li>
+                          <li>OData V3 support in JayData is coming, but it's not fully there yet. But things are evolving fast, 
+                            so make sure to check <a href="http://jaydata.org">http://jaydata.org</a> for the latest information.</li>
+                        </ol>
                         <p>
-                          Back to the lists layout: The first one is a simple project list and the second a time tracking list with a lookup to the project list. 
+                          About the lists layout: The first one is a simple project list and the second a time tracking list with a lookup to the project list. 
                           The setup is derived from Chris O'Brien's work. You should make yourself familiar with the setup at 
                           <a href="http://www.sharepointnutsandbolts.com/2012/08/create-lists-content-types-files-etc.html">Chris O'Brien's blog</a>.  
                         </p>
@@ -76,11 +81,21 @@ $.ajax({
                         <p><img src="../images/ExploreTheResults.jpg"/></p>
                     </div>
                     <div>
-                        <h4>Experiment around</h4>
-
-                        <p>Copy/paste the code into the console and bend it to your will.</p>
-
-                        <p><img src="../images/ModifyAndRun.jpg"/></p>
+                        <h4>Technology stack</h4>
+                        <dl>
+                          <dt><a href="http://www.typescriptlang.org/">TypeScript</a></dt>
+                          <dd>TypeScript is a language for application-scale JavaScript development.</dd>
+                          <dt><a href="http://www.requirejs.org/">RequireJS</a></dt>
+                          <dd>RequireJS is a JavaScript file and module loader.</dd>
+                          <dt><a href="http://jaydata.org/">JayData</a></dt>
+                          <dd>The cross-platform HTML5 data-management library for JavaScript</dd>
+                          <dt><a href="http://msdn.microsoft.com/en-US/office/apps/fp123627">Office Developer tools</a></dt>
+                          <dd>Create rich, immersive apps for Office and SharePoint using the premiere tool for professional developers.</dd>
+                          <dt><a href="http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6">Web Essentials 2012</a></dt>
+                          <dd>Adds many useful features to Visual Studio for web developers</dd>
+                          <dt><a href="http://foundation.zurb.com/">Zurb foundation</a></dt>
+                          <dd>Everything you need to know to build for the future.</dd>
+                        </dl>
                     </div>
                 </div>
             </div>
@@ -133,6 +148,8 @@ $.ajax({
 <script src="../Scripts/jaydataproviders/oDataProvider.js"></script>
 <script src="../App/DataService/ListDataSvcMetadata.js"></script>
 
-<script src="../App/app.js"></script>
+<!-- Using require.js ONLY for own AMD modules -->
+<script data-main="../App/main.js" src="../Scripts/require.js"></script>
+  
   
 </asp:Content>

@@ -691,4 +691,6 @@ module MyApp.DataService {
     ConvertListTitleToEntitySetName: (listTitle: string, handler?: (result: string) => void) => $data.IPromise;
     
   }
+
 }
+

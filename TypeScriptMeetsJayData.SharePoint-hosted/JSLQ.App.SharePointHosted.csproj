@@ -42,9 +42,13 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="App\App.min.js">
-      <DependentUpon>App.ts</DependentUpon>
+    <Content Include="App\CRUD.js">
+      <DependentUpon>CRUD.ts</DependentUpon>
     </Content>
+    <Content Include="App\CRUD.min.js">
+      <DependentUpon>CRUD.ts</DependentUpon>
+    </Content>
+    <Content Include="App\CRUD.ts" />
     <Content Include="App\DataService\ListDataSvcMetadata.d.js">
       <DependentUpon>ListDataSvcMetadata.d.ts</DependentUpon>
     </Content>
@@ -52,9 +56,20 @@
       <DependentUpon>ListDataSvcMetadata.d.ts</DependentUpon>
     </Content>
     <Content Include="App\Elements.xml" />
-    <Content Include="App\temp.min.js">
-      <DependentUpon>temp.ts</DependentUpon>
+    <Content Include="App\main.js">
+      <DependentUpon>main.ts</DependentUpon>
     </Content>
+    <Content Include="App\main.min.js">
+      <DependentUpon>main.ts</DependentUpon>
+    </Content>
+    <Content Include="App\main.ts" />
+    <Content Include="App\View.js">
+      <DependentUpon>View.ts</DependentUpon>
+    </Content>
+    <Content Include="App\View.min.js">
+      <DependentUpon>View.ts</DependentUpon>
+    </Content>
+    <Content Include="App\View.ts" />
     <Content Include="CommandLine.dll" />
     <Content Include="Images\ExploreTheResults.jpg" />
     <Content Include="Images\foundation\orbit\bullets.jpg" />
@@ -73,13 +88,10 @@
     <Content Include="Images\Spirit_Orange_96x96.png">
       <OpcRelationship>manifest-icon</OpcRelationship>
     </Content>
+    <Content Include="Images\TypeScriptExample.jpg" />
     <Content Include="JayData_readme.txt" />
     <Content Include="JaySvcUtil.exe" />
     <Content Include="Pages\Default.aspx" />
-    <TypeScriptCompile Include="App\App.ts" />
-    <Content Include="App\App.js">
-      <DependentUpon>App.ts</DependentUpon>
-    </Content>
     <Content Include="Projects\Elements.xml" />
     <Content Include="Projects\ProjectsInstance\Elements.xml" />
     <Content Include="Projects\Schema.xml" />
@@ -172,10 +184,6 @@
     <Content Include="Scripts\rainbow\themes\tricolore.css" />
     <Content Include="Scripts\rainbow\themes\twilight.css" />
     <Content Include="Scripts\rainbow\themes\zenburnesque.css" />
-    <TypeScriptCompile Include="App\temp.ts" />
-    <Content Include="App\temp.js">
-      <DependentUpon>temp.ts</DependentUpon>
-    </Content>
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\require.min.js">
       <DependentUpon>require.js</DependentUpon>

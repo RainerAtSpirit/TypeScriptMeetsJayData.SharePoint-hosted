@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="App">
-<File Path="App\App.ts" Url="App/App.ts" />
-<File Path="App\App.js" Url="App/App.js" />
 <File Path="App\DataService\ListDataSvcMetadata.d.ts" Url="App/DataService/ListDataSvcMetadata.d.ts" />
 <File Path="App\DataService\ListDataSvcMetadata.js" Url="App/DataService/ListDataSvcMetadata.js" />
-    <File Path="App\App.min.js" Url="App/App.min.js" />
-    <File Path="App\temp.ts" Url="App/temp.ts" />
-    <File Path="App\temp.js" Url="App/temp.js" />
-    <File Path="App\temp.min.js" Url="App/temp.min.js" />
     <File Path="App\DataService\ListDataSvcMetadata.d.js" Url="App/DataService/ListDataSvcMetadata.d.js" />
     <File Path="App\DataService\ListDataSvcMetadata.d.min.js" Url="App/DataService/ListDataSvcMetadata.d.min.js" />
+    <File Path="App\View.ts" Url="App/View.ts" />
+    <File Path="App\CRUD.ts" Url="App/CRUD.ts" />
+    <File Path="App\main.ts" Url="App/main.ts" />
+    <File Path="App\View.min.js" Url="App/View.min.js" />
+    <File Path="App\main.min.js" Url="App/main.min.js" />
+    <File Path="App\main.js" Url="App/main.js" />
+    <File Path="App\View.js" Url="App/View.js" />
+    <File Path="App\CRUD.min.js" Url="App/CRUD.min.js" />
+    <File Path="App\CRUD.js" Url="App/CRUD.js" />
   </Module>
 </Elements>

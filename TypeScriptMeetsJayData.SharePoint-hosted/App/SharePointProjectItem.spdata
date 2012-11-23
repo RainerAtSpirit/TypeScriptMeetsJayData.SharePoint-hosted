@@ -2,15 +2,18 @@
 <ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="App\" Type="ElementManifest" />
-    <ProjectItemFile Source="App.ts" Target="App\" Type="ElementFile" />
-    <ProjectItemFile Source="App.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="DataService\ListDataSvcMetadata.d.ts" Target="App\DataService\" Type="ElementFile" />
     <ProjectItemFile Source="DataService\ListDataSvcMetadata.js" Target="App\DataService\" Type="ElementFile" />
-    <ProjectItemFile Source="App.min.js" Target="App\" Type="ElementFile" />
-    <ProjectItemFile Source="temp.ts" Target="App\" Type="ElementFile" />
-    <ProjectItemFile Source="temp.js" Target="App\" Type="ElementFile" />
-    <ProjectItemFile Source="temp.min.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="DataService\ListDataSvcMetadata.d.js" Target="App\DataService\" Type="ElementFile" />
     <ProjectItemFile Source="DataService\ListDataSvcMetadata.d.min.js" Target="App\DataService\" Type="ElementFile" />
+    <ProjectItemFile Source="View.ts" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="CRUD.ts" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="main.ts" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="View.min.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="main.min.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="main.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="View.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="CRUD.min.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="CRUD.js" Target="App\" Type="ElementFile" />
   </Files>
 </ProjectItem>
